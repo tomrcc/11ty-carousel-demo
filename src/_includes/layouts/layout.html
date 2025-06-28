@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/assets/styles/main.css">
 
     <!-- Add editor styles -->
-    <link rel="stylesheet" href="/.cloudcannon/css/editor.css" />
+    <link rel="stylesheet" href="/assets/styles/editor.css" />
 
     <!-- Add SEO -->
     {% include 'partials/seo.html' %}
@@ -29,12 +29,19 @@
 
     <!-- Add FontAwesome Icons -->
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    </head>
-    <body>
-        {% include 'partials/navigation/header.html' %}
-        <main id="main">
-            {{ content }}
-        </main>
-        {% include 'partials/navigation/footer.html' %}
-    </body>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body>
+    {% include 'partials/navigation/header.html' %}
+    <main id="main">
+      {{ content }}
+      </main>
+      {% include 'partials/navigation/footer.html' %}
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </html>

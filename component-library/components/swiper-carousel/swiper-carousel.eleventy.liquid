@@ -1,0 +1,32 @@
+{% if env_bookshop_live %}
+  <swiper-container>
+    <p>I am being edited live!</p>
+    <swiper-slide>Slide 1</swiper-slide>
+  </swiper-container>
+{% else %}
+
+<swiper-container>
+  <swiper-slide>Slide 1</swiper-slide>
+  <swiper-slide>Slide 2</swiper-slide>
+  <swiper-slide>Slide 3</swiper-slide>
+</swiper-container>
+
+
+<script>
+  // swiper element
+  const swiperEl = document.querySelector('swiper-container');
+
+  // swiper parameters
+  const swiperParams = {
+    slidesPerView: 1,
+    loop: true,
+  };
+
+  // now we need to assign all parameters to Swiper element
+  Object.assign(swiperEl, swiperParams);
+
+  // and now initialize it
+  swiperEl.initialize();
+</script>
+{% endif %}
+

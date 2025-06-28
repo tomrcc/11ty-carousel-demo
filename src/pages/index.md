@@ -16,6 +16,7 @@ layout: layouts/component-page.html
 permalink: /
 eleventyExcludeFromCollections: false
 content_blocks:
+  - _bookshop_name: swiper-carousel
   - _bookshop_name: hero
     background_color: '#ffffff'
     heading:
