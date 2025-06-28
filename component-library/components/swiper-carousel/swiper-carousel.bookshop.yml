@@ -5,7 +5,10 @@ spec:
   label: "Swiper Carousel"
   description: A simple carousel
   icon: slideshow
-  tags: []
+  tags:
+    - Carousel
+    - Background Colors
+    - Text
 
 # Defines the structure of this component, as well as the default values
 blueprint:
