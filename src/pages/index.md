@@ -21,6 +21,24 @@ content_blocks:
       heading_text: Hello Carousel
       text_color: '#a0a2ff'
     slides:
+      - background_color: '#faf3dd'
+        slide_content:
+          slide_heading:
+            heading_text: Bob Ross 3
+            text_color: '#FF785A'
+          text:
+            markdown_content: >-
+              I think you'll be tickled with what you can do with something that
+              starts out looking this bad. When the birds take over, I'll have
+              friends! I want this one a little bit darker. Absolutely no
+              limits! Don't think there's anybody that doesn't like mountains.
+              Well, maybe there is.
+
+              Always doing the things furthest away first and working forward.
+              It'll just eat up all the crimson in the world. Be careful, be
+              careful. You have to make all these big decisions when you have
+              power. Always start with the color in here and then work outward.
+            text_color: '#333232'
       - background_color: '#F2E2D2'
         slide_content:
           slide_heading:
@@ -57,24 +75,6 @@ content_blocks:
               absolutely addicted to painting. You have to make an almighty
               decision.
             text_color: '#808080'
-      - background_color: '#c8d5b9'
-        slide_content:
-          slide_heading:
-            heading_text: Bob Ross 3
-            text_color: '#ffffff'
-          text:
-            markdown_content: >-
-              I think you'll be tickled with what you can do with something that
-              starts out looking this bad. When the birds take over, I'll have
-              friends! I want this one a little bit darker. Absolutely no
-              limits! Don't think there's anybody that doesn't like mountains.
-              Well, maybe there is.
-
-              Always doing the things furthest away first and working forward.
-              It'll just eat up all the crimson in the world. Be careful, be
-              careful. You have to make all these big decisions when you have
-              power. Always start with the color in here and then work outward.
-            text_color: '#333232'
   - _bookshop_name: hero
     background_color: '#ffffff'
     heading:
