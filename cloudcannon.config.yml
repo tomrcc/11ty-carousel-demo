@@ -177,7 +177,7 @@ _inputs:
       bulletedlist: true
       code: true
       copyformatting: true
-      format: p h1 h2 h3 h4
+      format: p h2 h3 h4
       horizontalrule: true
       image: true
       image_size_attributes: true
