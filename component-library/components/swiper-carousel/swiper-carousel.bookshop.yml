@@ -39,11 +39,20 @@ _structures:
             text:
               text_content:
               text_color:
+        preview:
+          icon: slideshow
+          text:
+            - key: slide_content.slide_heading.heading_text
         _inputs:
+          heading:
+            cascade: true
+          text_color:
+            cascade: true
+          text_content:
+            cascade: true
           slide_content:
             type: object
             options:
               preview:
-                icon: slideshow
                 text:
                   - key: heading_text
