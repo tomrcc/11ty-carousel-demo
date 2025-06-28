@@ -19,6 +19,11 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  heading:
+    type: object
+    options:
+      preview:
+        icon: short_text
   slides:
     type: array
     comment: Carousel disabled in the Visual Editor. To work on an individual slide, drag it to the top of the list, then drag it back into the correct order once you've finished editing.
