@@ -7,6 +7,8 @@ Shows how to add a carousel, and edit it in CloudCannon's Visual Editor.
 - Demonstrates using a fallback for Visual Editing.
 - Demonstrates using a structure for array inputs.
 
+[Demo site](https://epic-spear.cloudvent.net/)
+
 ## Getting Started
 
 To get your own copy of this demo, go to the [GitHub repository](https://github.com/tomrcc/11ty-carousel-demo/), and click `Use this template`.
