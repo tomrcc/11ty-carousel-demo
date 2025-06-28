@@ -1,5 +1,9 @@
-swiper-container {
+.carousel {
   max-width: var(--pageContainer);
   margin: 0 auto;
   padding-inline: var(--pagePadding);
+}
+
+.carousel-heading {
+  font-size: 2rem;
 }

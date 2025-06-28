@@ -17,6 +17,44 @@ permalink: /
 eleventyExcludeFromCollections: false
 content_blocks:
   - _bookshop_name: swiper-carousel
+    heading:
+      heading_text: Hello Carousel
+      text_color: '#333232'
+    slides:
+      - background_color: '#ff0000'
+        slide_content:
+          slide_heading:
+            heading_text: Slide 1
+            text_color: '#ffffff'
+          text:
+            text_content: >-
+              I lived in *Alaska* for many, many years. Such a temptation to do a little bit more. All we want to leave is the value in the canvas. Let's go on up here and let's get started. It doesn't matter in our world where it goes.
+
+
+              The round brush is so fun, let's go back to that. Let it sort of bounce around and play. I'm a nature freak. Go out and spend some time talking to a tree. Let some little things just shine through.
+            text_color: '#ffffff'
+      - background_color: '#0000ff'
+        slide_content:
+          slide_heading:
+            heading_text: Slide 2
+            text_color: '#ffffff'
+          text:
+            text_content: >-
+              Just give it a little hue here. Let us know, and we'll do some more crazy things for you. Just make little X's, and we'll put in a happy little sky. Pretend that if you're not careful your hand will literally just float away. Don't let this get too strong or it'll stand out.
+
+              I look for easy ways to do things. This is a very individual thing, painting is. Sneaky cloud running around here at night! We're like drug dealers -- we come into town and get people absolutely addicted to painting. You have to make an almighty decision.
+            text_color: '#f2f2f2'
+      - background_color: '#00ff00'
+        slide_content:
+          slide_heading:
+            heading_text: Slide 3
+            text_color: '#ffffff'
+          text:
+            text_content: >-
+              I think you'll be tickled with what you can do with something that starts out looking this bad. When the birds take over, I'll have friends! I want this one a little bit darker. Absolutely no limits! Don't think there's anybody that doesn't like mountains. Well, maybe there is.
+
+              Always doing the things furthest away first and working forward. It'll just eat up all the crimson in the world. Be careful, be careful. You have to make all these big decisions when you have power. Always start with the color in here and then work outward.
+            text_color: '#333232'
   - _bookshop_name: hero
     background_color: '#ffffff'
     heading:

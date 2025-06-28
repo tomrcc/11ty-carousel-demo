@@ -1,32 +1,51 @@
-{% if env_bookshop_live %}
-  <swiper-container>
-    <p>I am being edited live!</p>
-    <swiper-slide>Slide 1</swiper-slide>
-  </swiper-container>
-{% else %}
+<section class="carousel">
+  <h2 class="carousel-heading" style="color: {{ heading.text_color }};">
+    {{ heading.heading_text  }}
+  </h2>
+  {% if env_bookshop_live %}
+    <swiper-container>
+      {% assign firstSlide = slides.first %}
+      <swiper-slide style="background-color: {{ firstSlide.background_color }};">
+        <h3 style="color: {{ firstSlide.slide_content.slide_heading.text_color }};">
+          {{ firstSlide.slide_content.slide_heading.heading_text }}
+        </h3>
+        <div style="color: {{ firstSlide.slide_content.text.text_color }};">
+          {{ firstSlide.slide_content.text.text_content | renderContent }}
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  {% else %}
+    <swiper-container>
+      {% for slide in slides %}
+        {% assign slideContent = slide.slide_content %}
+        <swiper-slide style="background-color: {{ slide.background_color }};">
+          <h3 style="color: {{ slideContent.slide_heading.text_color }};">
+            {{ slideContent.slide_heading.heading_text }}
+          </h3>
+          <div style="color: {{ slideContent.text.text_color }};">
+            {{ slideContent.text.text_content | renderContent }}
+          </div>
+        </swiper-slide>
+      {% endfor %}
+    </swiper-container>
 
-<swiper-container>
-  <swiper-slide>Slide 1</swiper-slide>
-  <swiper-slide>Slide 2</swiper-slide>
-  <swiper-slide>Slide 3</swiper-slide>
-</swiper-container>
 
+    <script>
+      // swiper element
+      const swiperEl = document.querySelector('swiper-container');
 
-<script>
-  // swiper element
-  const swiperEl = document.querySelector('swiper-container');
+      // swiper parameters
+      const swiperParams = {
+        slidesPerView: 1,
+        loop: true,
+      };
 
-  // swiper parameters
-  const swiperParams = {
-    slidesPerView: 1,
-    loop: true,
-  };
+      // now we need to assign all parameters to Swiper element
+      Object.assign(swiperEl, swiperParams);
 
-  // now we need to assign all parameters to Swiper element
-  Object.assign(swiperEl, swiperParams);
-
-  // and now initialize it
-  swiperEl.initialize();
-</script>
-{% endif %}
+      // and now initialize it
+      swiperEl.initialize();
+    </script>
+  {% endif %}
+</section>
 

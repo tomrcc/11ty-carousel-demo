@@ -2,16 +2,48 @@
 spec:
   structures:
     - content_blocks
-  label: "Swiper-carousel"
-  description:
-  icon:
+  label: "Swiper Carousel"
+  description: A simple carousel
+  icon: slideshow
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  heading:
+    heading_text:
+    text_color:
+  slides: []
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  slides:
+    type: array
+    comment: Carousel disabled in the Visual Editor. To work on an individual slide, drag it to the top of the list, then drag it back into the correct order once you've finished editing.
+    options:
+      structures: _structures.carousel_slide
+      preview:
+        icon: slideshow
+
+_structures:
+  carousel_slide:
+    values:
+      - value:
+          background_color:
+          slide_content:
+            slide_heading:
+              heading_text:
+              text_color:
+            text:
+              text_content:
+              text_color:
+        _inputs:
+          slide_content:
+            type: object
+            options:
+              preview:
+                icon: slideshow
+                text:
+                  - key: heading_text
