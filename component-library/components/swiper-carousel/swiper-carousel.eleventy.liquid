@@ -1,16 +1,20 @@
 <section class="carousel">
-  <h2 class="carousel-heading" style="color: {{ heading.text_color }};">
-    {{ heading.heading_text  }}
-  </h2>
+  {% if heading.heading_text %}
+    <h2 class="carousel-heading" style="color: {{ heading.text_color }};">
+      {{ heading.heading_text  }}
+    </h2>
+  {% endif %}
   {% if env_bookshop_live %}
     <swiper-container>
       {% assign firstSlide = slides.first %}
       <swiper-slide class="carousel-slide" style="background-color: {{ firstSlide.background_color }};">
-        <h3 class="slide-heading" style="color: {{ firstSlide.slide_content.slide_heading.text_color }};">
-          {{ firstSlide.slide_content.slide_heading.heading_text }}
-        </h3>
-        <div class="markdown-text" style="color: {{ firstSlide.slide_content.text.text_color }};">
-          {{ firstSlide.slide_content.text.markdown_content | renderContent }}
+        <div class="slide-container">
+          <h3 class="slide-heading" style="color: {{ firstSlide.slide_content.slide_heading.text_color }};">
+            {{ firstSlide.slide_content.slide_heading.heading_text }}
+          </h3>
+          <div class="markdown-text" style="color: {{ firstSlide.slide_content.text.text_color }};">
+            {{ firstSlide.slide_content.text.markdown_content | renderContent }}
+          </div>
         </div>
       </swiper-slide>
     </swiper-container>
@@ -19,11 +23,13 @@
       {% for slide in slides %}
         {% assign slideContent = slide.slide_content %}
         <swiper-slide class="carousel-slide" style="background-color: {{ slide.background_color }};">
-          <h3 class="slide-heading" style="color: {{ slideContent.slide_heading.text_color }};">
-            {{ slideContent.slide_heading.heading_text }}
-          </h3>
-          <div class="markdown-text" style="color: {{ slideContent.text.text_color }};">
-            {{ slideContent.text.markdown_content | renderContent }}
+          <div class="slide-container">
+            <h3 class="slide-heading" style="color: {{ slideContent.slide_heading.text_color }};">
+              {{ slideContent.slide_heading.heading_text }}
+            </h3>
+            <div class="markdown-text" style="color: {{ slideContent.text.text_color }};">
+              {{ slideContent.text.markdown_content | renderContent }}
+            </div>
           </div>
         </swiper-slide>
       {% endfor %}

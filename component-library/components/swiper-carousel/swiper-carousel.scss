@@ -1,10 +1,15 @@
 .carousel {
+}
+.slide-container {
   max-width: var(--pageContainer);
   margin: 0 auto;
   padding-inline: var(--pagePadding);
 }
 
 .carousel-heading {
+  max-width: var(--pageContainer);
+  margin: 0 auto;
+  padding-inline: var(--pagePadding);
   font-size: 2rem;
 }
 
