@@ -9,7 +9,7 @@
         <h3 style="color: {{ firstSlide.slide_content.slide_heading.text_color }};">
           {{ firstSlide.slide_content.slide_heading.heading_text }}
         </h3>
-        <div style="color: {{ firstSlide.slide_content.text.text_color }};">
+        <div class="markdown-text" style="color: {{ firstSlide.slide_content.text.text_color }};">
           {{ firstSlide.slide_content.text.markdown_content | renderContent }}
         </div>
       </swiper-slide>
@@ -22,7 +22,7 @@
           <h3 style="color: {{ slideContent.slide_heading.text_color }};">
             {{ slideContent.slide_heading.heading_text }}
           </h3>
-          <div style="color: {{ slideContent.text.text_color }};">
+          <div class="markdown-text" style="color: {{ slideContent.text.text_color }};">
             {{ slideContent.text.markdown_content | renderContent }}
           </div>
         </swiper-slide>
