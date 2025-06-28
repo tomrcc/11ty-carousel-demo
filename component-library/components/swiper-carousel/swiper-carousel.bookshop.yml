@@ -37,19 +37,22 @@ _structures:
               heading_text:
               text_color:
             text:
-              text_content:
+              markdown_content:
               text_color:
         preview:
           icon: slideshow
           text:
             - key: slide_content.slide_heading.heading_text
         _inputs:
-          heading:
-            cascade: true
-          text_color:
-            cascade: true
-          text_content:
-            cascade: true
+          text:
+            options:
+              preview:
+                icon: description
+          slide_heading:
+            type: object
+            options:
+              preview:
+                icon: short_text
           slide_content:
             type: object
             options:

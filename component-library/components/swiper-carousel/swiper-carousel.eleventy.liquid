@@ -10,7 +10,7 @@
           {{ firstSlide.slide_content.slide_heading.heading_text }}
         </h3>
         <div style="color: {{ firstSlide.slide_content.text.text_color }};">
-          {{ firstSlide.slide_content.text.text_content | renderContent }}
+          {{ firstSlide.slide_content.text.markdown_content | renderContent }}
         </div>
       </swiper-slide>
     </swiper-container>
@@ -23,7 +23,7 @@
             {{ slideContent.slide_heading.heading_text }}
           </h3>
           <div style="color: {{ slideContent.text.text_color }};">
-            {{ slideContent.text.text_content | renderContent }}
+            {{ slideContent.text.markdown_content | renderContent }}
           </div>
         </swiper-slide>
       {% endfor %}
